@@ -3,6 +3,7 @@ import Hero from "@/components/home/Hero";
 import ProjectsGrid from "@/components/home/ProjectsGrid";
 import SkillsGrid from "@/components/home/SkillsGrid";
 import WritingSection from "@/components/home/WritingSection";
+import ContactSection from "@/components/home/ContactSection";
 import { siteConfig } from "@/data/siteConfig";
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
       <ProjectsGrid />
       <SkillsGrid />
       <WritingSection />
+      <ContactSection />
     </>
   );
 }

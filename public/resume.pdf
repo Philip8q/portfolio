@@ -1,0 +1,59 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 2705 >>
+stream
+BT /F1 22 Tf 50 740 Td (Philip Omondi) Tj ET
+BT /F1 13 Tf 50 720 Td (Developer & Automation Engineer | Nairobi, Kenya) Tj ET
+BT /F1 10 Tf 50 705 Td (Email: caysonb8@gmail.com | Phone/WhatsApp: +254 707 610 964) Tj ET
+BT /F1 10 Tf 50 692 Td (GitHub: github.com/Philip8q | LinkedIn: linkedin.com/in/oketch-omondi/) Tj ET
+BT /F1 10 Tf 50 679 Td (Portfolio: https://philipomondi.netlify.app) Tj ET
+BT /F1 13 Tf 50 650 Td (SUMMARY) Tj ET
+BT /F1 10 Tf 50 635 Td (Results-oriented Developer and Automation Engineer specializing in AI-driven lead qualification systems,) Tj ET
+BT /F1 10 Tf 50 622 Td (n8n workflow pipelines, and modern web applications built with Next.js and React.) Tj ET
+BT /F1 13 Tf 50 595 Td (CORE TECHNICAL SKILLS) Tj ET
+BT /F1 10 Tf 50 580 Td (Languages & Frameworks: JavaScript, Python, Next.js, React, Node.js, Tailwind CSS) Tj ET
+BT /F1 10 Tf 50 567 Td (AI & Automation: n8n, AI SDK, OpenRouter, Groq, Gemini, Webhooks, Docker) Tj ET
+BT /F1 10 Tf 50 554 Td (Databases & Tools: PostgreSQL, Supabase, Git, GitHub Actions, Vercel, Netlify) Tj ET
+BT /F1 13 Tf 50 525 Td (EXPERIENCE & CAPSTONE PROJECTS) Tj ET
+BT /F1 11 Tf 50 508 Td (LeadFlow - AI Lead Qualification & CRM Automation \(Capstone Project\)) Tj ET
+BT /F1 10 Tf 50 494 Td (- Architected an autonomous inbound lead qualification system with real-time scoring and streaming LLM chat.) Tj ET
+BT /F1 10 Tf 50 481 Td (- Built resilient n8n orchestration pipelines connecting webhooks, OpenRouter AI, and Supabase CRM.) Tj ET
+BT /F1 11 Tf 50 455 Td (Expense Tracker - Accessible Fintech Application) Tj ET
+BT /F1 10 Tf 50 441 Td (- Developed a real-time personal finance tracker using React, Vite, and CSS Modules.) Tj ET
+BT /F1 10 Tf 50 428 Td (- Integrated live category filtering, dashboard analytics, dark mode, and complete Vitest test suite.) Tj ET
+BT /F1 11 Tf 50 402 Td (Weekly Review Assistant - Autonomous AI Telemetry Agent) Tj ET
+BT /F1 10 Tf 50 388 Td (- Engineered an AI agent synthesizing weekly GitHub commits and n8n execution telemetry into actionable briefs.) Tj ET
+BT /F1 10 Tf 50 375 Td (- Integrated Groq and Gemini models for automated analysis of project velocity and bottlenecks.) Tj ET
+BT /F1 13 Tf 50 345 Td (INTERNSHIP & PROFESSIONAL TRAINING) Tj ET
+BT /F1 11 Tf 50 330 Td (FlyRank Internship Program \(2026 Cohort\)) Tj ET
+BT /F1 10 Tf 50 316 Td (- Developing production-grade software applications and real-time AI automation workflows.) Tj ET
+BT /F1 10 Tf 50 303 Td (- Deploying cloud architectures over HTTPS with DNS configuration and continuous integration.) Tj ET
+BT /F1 13 Tf 50 275 Td (EDUCATION) Tj ET
+BT /F1 10 Tf 50 260 Td (Computer Science & Software Development Studies | Nairobi, Kenya) Tj ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3068
+%%EOF

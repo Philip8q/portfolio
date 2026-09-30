@@ -23,9 +23,9 @@ export default function DeployPipelineButton({
       case BUTTON_STATES.ERROR:
         return "bg-rose-600 dark:bg-rose-500 text-white border-rose-400 shadow-lg shadow-rose-500/20";
       case BUTTON_STATES.LOADING:
-        return "bg-slate-800 dark:bg-slate-700 text-white border-slate-600 shadow-md";
+        return "bg-neutral-900 dark:bg-neutral-950 text-white border-neutral-700 shadow-md";
       default:
-        return "bg-neutral-900 dark:bg-neutral-100 hover:bg-neutral-800 dark:hover:bg-white text-white dark:text-neutral-900 border-neutral-700 dark:border-neutral-300 shadow-md";
+        return "bg-neutral-900 dark:bg-neutral-100 hover:bg-black dark:hover:bg-white text-white dark:text-neutral-900 border-neutral-800 dark:border-neutral-200 shadow-md";
     }
   };
 
@@ -60,7 +60,7 @@ export default function DeployPipelineButton({
         aria-live="polite"
         className={`relative h-13 px-7 rounded-xl font-medium tracking-wide text-sm sm:text-base
                    border flex items-center justify-center gap-3 overflow-hidden select-none
-                   focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-neutral-400/50
+                   focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black/40 dark:focus-visible:ring-white/40
                    transition-colors duration-200 cursor-pointer ${getThemeClasses()}`}
         style={{ minWidth: "190px" }}
       >
@@ -114,7 +114,7 @@ export default function DeployPipelineButton({
             </motion.div>
           )}
 
-          {/* 3. ERROR */}
+          {/* 3. ERROR (No dashes) */}
           {isError && (
             <motion.div
               key="error"
@@ -125,7 +125,7 @@ export default function DeployPipelineButton({
               className="flex items-center gap-2"
             >
               <Icon icon="mdi:close-octagon" width={22} height={22} />
-              <span className="font-medium">Deploy Halted &mdash; Retry</span>
+              <span className="font-medium">Deploy Halted (Tap to Retry)</span>
             </motion.div>
           )}
 

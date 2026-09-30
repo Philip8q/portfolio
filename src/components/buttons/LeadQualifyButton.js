@@ -13,7 +13,7 @@ export default function LeadQualifyButton({
 
   const { state, isLoading, isSuccess, isError, isIdle, trigger } = stateMachine;
 
-  // Background and border styling per state
+  // Background and border styling per state  sleek black theme
   const getThemeClasses = () => {
     if (disabled) {
       return "bg-neutral-300 dark:bg-neutral-800 text-neutral-400 dark:text-neutral-500 cursor-not-allowed border-transparent shadow-none";
@@ -24,9 +24,9 @@ export default function LeadQualifyButton({
       case BUTTON_STATES.ERROR:
         return "bg-rose-600 dark:bg-rose-500 text-white border-rose-500 shadow-lg shadow-rose-500/25";
       case BUTTON_STATES.LOADING:
-        return "bg-indigo-700 dark:bg-indigo-600 text-white border-indigo-500 shadow-md";
+        return "bg-black text-white border-neutral-800 shadow-md";
       default:
-        return "bg-indigo-600 dark:bg-indigo-500 hover:bg-indigo-700 dark:hover:bg-indigo-600 text-white border-indigo-400/30 shadow-md shadow-indigo-500/20";
+        return "bg-black dark:bg-white text-white dark:text-black hover:bg-neutral-900 dark:hover:bg-neutral-100 border-black dark:border-white shadow-lg shadow-black/25";
     }
   };
 
@@ -62,7 +62,7 @@ export default function LeadQualifyButton({
         aria-live="polite"
         className={`relative h-13 px-7 rounded-xl font-medium tracking-wide text-sm sm:text-base
                    border flex items-center justify-center gap-3 overflow-hidden select-none
-                   focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-indigo-400/50
+                   focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-black/40 dark:focus-visible:ring-white/40
                    transition-colors duration-200 cursor-pointer ${getThemeClasses()}`}
         style={{ minWidth: "190px" }}
       >
@@ -124,7 +124,7 @@ export default function LeadQualifyButton({
             </motion.div>
           )}
 
-          {/* 3. ERROR STATE */}
+          {/* 3. ERROR STATE (No dashes) */}
           {isError && (
             <motion.div
               key="error"
@@ -135,7 +135,7 @@ export default function LeadQualifyButton({
               className="flex items-center gap-2"
             >
               <Icon icon="mdi:alert-circle" width={22} height={22} />
-              <span className="font-medium">Failed &mdash; Retry</span>
+              <span className="font-medium">Failed (Tap to Retry)</span>
             </motion.div>
           )}
 
@@ -153,7 +153,7 @@ export default function LeadQualifyButton({
                 icon="mdi:creation"
                 width={20}
                 height={20}
-                className="text-indigo-200"
+                className="text-neutral-400 dark:text-neutral-600"
               />
               <span>Qualify Inbound Lead</span>
             </motion.div>

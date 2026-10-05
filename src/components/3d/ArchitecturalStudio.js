@@ -665,11 +665,11 @@ export default function ArchitecturalStudio() {
               </svg>
             </div>
             <p className="text-lg font-bold text-white">Drop .GLB or .GLTF to Stage Model</p>
-            <p className="text-sm text-gray-300">Auto-centered · Scaled to Frustum · Shadows Enabled</p>
+            <p className="text-sm text-gray-300">Auto Centered · Scaled to Frustum · Shadows Enabled</p>
           </div>
         )}
 
-        {/* Top-Left: Model Badge & Staging Info */}
+        {/* Top Left: Model Badge and Staging Info */}
         <div className="absolute top-4 left-4 z-20 flex flex-col gap-1.5 pointer-events-none">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-light-bg/85 dark:bg-dark-bg/85 backdrop-blur-md border border-light-border/60 dark:border-dark-border/60 shadow-sm pointer-events-auto">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
@@ -686,16 +686,16 @@ export default function ArchitecturalStudio() {
             )}
           </div>
           <div className="text-[10px] font-mono text-gray-400 bg-black/40 backdrop-blur-sm px-2.5 py-1 rounded-lg w-fit">
-            Drag & Drop any .GLB onto canvas
+            Drag and Drop any .GLB onto canvas
           </div>
         </div>
 
-        {/* Top-Right: FE-10 Performance Telemetry HUD */}
+        {/* Top Right: FE10 Performance Telemetry HUD */}
         <div className="absolute top-4 right-4 z-20 pointer-events-auto">
           <div className="p-3 rounded-xl bg-dark-bg/90 backdrop-blur-md border border-dark-border text-xs font-mono text-gray-300 shadow-xl flex flex-col gap-1 min-w-[155px]">
             <div className="flex items-center justify-between border-b border-dark-border/60 pb-1 mb-1">
               <span className="text-[10px] font-bold uppercase tracking-wider text-dark-accent">
-                FE-10 Perf HUD
+                FE10 Perf HUD
               </span>
               <span className={`font-bold ${fps >= 55 ? "text-emerald-400" : fps >= 30 ? "text-amber-400" : "text-rose-400"}`}>
                 {fps} FPS
@@ -720,7 +720,7 @@ export default function ArchitecturalStudio() {
           </div>
         </div>
 
-        {/* Bottom Floating Bar: View Presets & Quick Actions */}
+        {/* Bottom Floating Bar: View Presets and Quick Actions */}
         <div className="absolute bottom-4 left-4 right-4 z-20 flex flex-wrap items-center justify-between gap-2 pointer-events-none">
           {/* Camera View Selector */}
           <div className="flex items-center gap-1.5 p-1.5 rounded-xl bg-light-bg/90 dark:bg-dark-bg/90 backdrop-blur-md border border-light-border dark:border-dark-border shadow-lg pointer-events-auto">
@@ -731,7 +731,7 @@ export default function ArchitecturalStudio() {
               { id: "hero", label: "Perspective" },
               { id: "front", label: "Elevation" },
               { id: "top", label: "Floorplan" },
-              { id: "detail", label: "Close-up" },
+              { id: "detail", label: "Closeup" },
             ].map((v) => (
               <button
                 key={v.id}
@@ -747,7 +747,7 @@ export default function ArchitecturalStudio() {
             ))}
           </div>
 
-          {/* Quick Actions (Exploded View, Auto-Rotate, Reset) */}
+          {/* Quick Actions (Exploded View, Auto Rotate, Reset) */}
           <div className="flex items-center gap-2 pointer-events-auto">
             {!isCustomModelRef.current && (
               <button
@@ -771,7 +771,7 @@ export default function ArchitecturalStudio() {
                   : "bg-light-bg/90 dark:bg-dark-bg/90 border-light-border dark:border-dark-border text-light-secondary dark:text-dark-secondary"
               }`}
             >
-              {autoRotate ? "Rotate: ON" : "Rotate: OFF"}
+              {autoRotate ? "Rotate ON" : "Rotate OFF"}
             </button>
 
             <button

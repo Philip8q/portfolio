@@ -13,7 +13,7 @@ export const projects = [
     id: 2,
     title: "Expense Tracker",
     description:
-      "A personal expense tracker I built from scratch using AI-assisted development. Add, edit, and delete expenses with validation, filter by category or month, see dashboard stats, toggle dark mode. Full Vitest test suite and accessibility pass.",
+      "A personal expense tracker I built from scratch using AI assisted development. Add, edit, and delete expenses with validation, filter by category or month, see dashboard stats, toggle dark mode. Full Vitest test suite and accessibility pass.",
     tech: ["React", "Vite", "CSS Modules", "Vitest"],
     github: "https://github.com/Philip8q/expense-tracker",
     live: "https://philip8q.github.io/expense-tracker/",

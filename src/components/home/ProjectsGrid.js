@@ -26,7 +26,7 @@ export default function ProjectsGrid() {
             What I Build
           </h2>
           <p className="text-light-secondary dark:text-dark-secondary mb-12 text-center max-w-lg mx-auto">
-            Real projects, tested and deployed — not tutorial copies.
+            Real projects, tested and deployed, not tutorial copies.
           </p>
         </AnimatedSection>
 

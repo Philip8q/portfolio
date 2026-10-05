@@ -7,13 +7,13 @@ export default function ThreeDStudioPage() {
   return (
     <>
       <Head>
-        <title>3D Architectural Studio — {siteConfig.name}</title>
+        <title>3D Architectural Studio | {siteConfig.name}</title>
         <meta
           name="description"
-          content="Interactive 3D Architectural Model and Asset Configurator by Philip Omondi. Built with Three.js, WebGL, custom staging lighting, drag-and-drop GLB support, and FE-10 performance budget."
+          content="Interactive 3D Architectural Model and Asset Configurator by Philip Omondi. Built with Three.js, WebGL, custom staging lighting, drag and drop GLB support, and FE10 performance budget."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content={`3D Architectural Studio — ${siteConfig.name}`} />
+        <meta property="og:title" content={`3D Architectural Studio | ${siteConfig.name}`} />
         <meta
           property="og:description"
           content="Interactive 3D Architectural Model and Asset Configurator by Philip Omondi. Explore materials, lighting, and interior floorplans."
@@ -36,14 +36,14 @@ export default function ThreeDStudioPage() {
                 Ardhia 3D Architectural Studio
               </h1>
               <p className="mt-2 text-sm sm:text-base text-light-secondary dark:text-dark-secondary max-w-2xl">
-                Interactive real-time 3D model configurator for Kenyan real estate brokerages and architectural assets. Test materials, lighting environments, camera elevations, or drop your own <code className="px-1.5 py-0.5 rounded bg-light-surface dark:bg-dark-surface font-mono text-xs">.glb</code> file onto the canvas.
+                Interactive real time 3D model configurator for Kenyan real estate brokerages and architectural assets. Test materials, lighting environments, camera elevations, or drop your own <code className="px-1.5 py-0.5 rounded bg-light-surface dark:bg-dark-surface font-mono text-xs">.glb</code> file onto the canvas.
               </p>
             </div>
 
             <div className="flex items-center gap-3">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-500 text-xs font-semibold border border-emerald-500/20">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping" />
-                FE-10 Verified · 60 FPS
+                FE10 Verified · 60 FPS
               </span>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function ThreeDStudioPage() {
         {/* Main 3D Experience Canvas & Configurator Deck */}
         <StudioWrapper />
 
-        {/* Technical Explainer & FE-10 Lens Specifications */}
+        {/* Technical Explainer & FE10 Lens Specifications */}
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6 pt-10 border-t border-light-border dark:border-dark-border">
           {/* Card 1: The Loop */}
           <div className="p-6 rounded-2xl bg-light-surface/40 dark:bg-dark-surface/40 border border-light-border dark:border-dark-border flex flex-col gap-3">
@@ -60,10 +60,10 @@ export default function ThreeDStudioPage() {
               01
             </div>
             <h3 className="text-base font-bold text-light-text dark:text-dark-text">
-              The 3D-on-the-Web Loop
+              The 3D Web Loop
             </h3>
             <p className="text-xs text-light-secondary dark:text-dark-secondary leading-relaxed">
-              Engineered using raw Three.js primitives for zero-overhead performance. Includes procedural architectural geometry (Villa Horizon), 3-point staged lighting, PCF soft shadows, ACES Filmic tone mapping, and a full drag-and-drop GLTFLoader parser.
+              Engineered using raw Three.js primitives for zero overhead performance. Includes procedural architectural geometry (Villa Horizon), 3 point staged lighting, PCF soft shadows, ACES Filmic tone mapping, and a full drag and drop GLTFLoader parser.
             </p>
           </div>
 
@@ -76,20 +76,20 @@ export default function ThreeDStudioPage() {
               Beyond Orbiting
             </h3>
             <p className="text-xs text-light-secondary dark:text-dark-secondary leading-relaxed">
-              Features live material switching (Obsidian, Cedar, Terracotta, Marble), roughness & metalness fine-tuning, wireframe toggles, 4 lighting environments, camera transitions, and an animated Exploded Inspection View that lifts the cantilevered roof to reveal the interior floorplan.
+              Features live material switching (Obsidian, Cedar, Terracotta, Marble), roughness and metalness fine tuning, wireframe toggles, 4 lighting environments, camera transitions, and an animated Exploded Inspection View that lifts the cantilevered roof to reveal the interior floorplan.
             </p>
           </div>
 
-          {/* Card 3: FE-10 Performance Budget */}
+          {/* Card 3: FE10 Performance Budget */}
           <div className="p-6 rounded-2xl bg-light-surface/40 dark:bg-dark-surface/40 border border-light-border dark:border-dark-border flex flex-col gap-3">
             <div className="w-9 h-9 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold text-sm">
               03
             </div>
             <h3 className="text-base font-bold text-light-text dark:text-dark-text">
-              Responsible Loading (FE-10)
+              Responsible Loading (FE10)
             </h3>
             <p className="text-xs text-light-secondary dark:text-dark-secondary leading-relaxed">
-              Code-split with Next.js dynamic imports (<code className="font-mono">ssr: false</code>). Clamped Device Pixel Ratio (<code className="font-mono">max 1.75x</code>) prevents GPU overheating on mobile retina screens. Includes automatic <code className="font-mono">prefers-reduced-motion</code> detection and a static fallback mode.
+              Code split with Next.js dynamic imports (<code className="font-mono">ssr: false</code>). Clamped Device Pixel Ratio (<code className="font-mono">max 1.75x</code>) prevents GPU overheating on mobile retina screens. Includes automatic <code className="font-mono">prefers-reduced-motion</code> detection and a static fallback mode.
             </p>
           </div>
         </div>

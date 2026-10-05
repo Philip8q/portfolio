@@ -4,7 +4,7 @@ import StudioFallback from "./StudioFallback";
 
 const DynamicStudio = dynamic(() => import("./ArchitecturalStudio"), {
   ssr: false,
-  loading: () => <StudioFallback message="Initializing Three.js WebGL Engine & Shader Cache..." />,
+  loading: () => <StudioFallback message="Initializing Three.js WebGL Engine and Shader Cache..." />,
 });
 
 export default function StudioWrapper() {
@@ -39,7 +39,7 @@ export default function StudioWrapper() {
       {/* Main Studio Render */}
       {staticFallbackMode ? (
         <StudioFallback
-          message="Static Low-Power Fallback Active (Zero GPU Overhead for Low-Battery or Reduced Motion Clients)"
+          message="Static Low Power Fallback Active (Zero GPU Overhead for Low Battery or Reduced Motion Clients)"
           onRetry={() => setStaticFallbackMode(false)}
         />
       ) : (

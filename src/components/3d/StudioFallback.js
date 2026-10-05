@@ -35,7 +35,7 @@ export default function StudioFallback({ message = "Initializing 3D WebGL Pipeli
 
         <div className="flex items-center justify-center gap-2 text-xs font-mono text-light-secondary dark:text-dark-secondary">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
-          <span>GPU Budget Checked · FE-10 Staging Ready</span>
+          <span>GPU Budget Checked · FE10 Staging Ready</span>
         </div>
 
         {onRetry && (

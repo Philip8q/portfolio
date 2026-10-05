@@ -5,7 +5,7 @@ const areas = [
   {
     title: "Build AI Systems",
     description:
-      "Lead scoring, streaming chat interfaces, tool-augmented LLMs. I build systems that talk to people, ask the right questions, and make decisions in real time.",
+      "Lead scoring, streaming chat interfaces, tool augmented LLMs. I build systems that talk to people, ask the right questions, and make decisions in real time.",
     icon: "mdi:brain",
   },
   {

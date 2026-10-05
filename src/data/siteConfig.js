@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Philip Omondi",
-  title: "Philip Omondi — Developer & Automation Engineer",
+  title: "Philip Omondi | Developer & Automation Engineer",
   tagline: "Developer & Automation Engineer",
   description:
     "Building AI-driven lead systems and n8n automations that turn inbound interest into actionable pipelines.",

@@ -13,12 +13,30 @@ export default function ThreeDStudioPage() {
           content="Interactive 3D Architectural Model and Asset Configurator by Philip Omondi. Built with Three.js, WebGL, custom staging lighting, drag and drop GLB support, and FE10 performance budget."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content={siteConfig.name} />
+
+        {/* Open Graph / Social */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${siteConfig.siteUrl}/3d`} />
         <meta property="og:title" content={`3D Architectural Studio | ${siteConfig.name}`} />
         <meta
           property="og:description"
           content="Interactive 3D Architectural Model and Asset Configurator by Philip Omondi. Explore materials, lighting, and interior floorplans."
         />
+        <meta property="og:image" content={`${siteConfig.siteUrl}/images/profile/7.jpeg`} />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`${siteConfig.siteUrl}/3d`} />
+        <meta name="twitter:title" content={`3D Architectural Studio | ${siteConfig.name}`} />
+        <meta
+          name="twitter:description"
+          content="Interactive 3D Architectural Model and Asset Configurator by Philip Omondi. Built with Three.js and WebGL."
+        />
+        <meta name="twitter:image" content={`${siteConfig.siteUrl}/images/profile/7.jpeg`} />
+
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.ico" />
       </Head>
 
       <div className="pt-28 pb-20 px-6 sm:px-8 max-w-[1400px] mx-auto">

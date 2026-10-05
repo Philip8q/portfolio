@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import LeadQualifyButton from "@/components/buttons/LeadQualifyButton";
 import DeployPipelineButton from "@/components/buttons/DeployPipelineButton";
 import { useButtonStateMachine } from "@/components/buttons/useButtonStateMachine";
+import { siteConfig } from "@/data/siteConfig";
 
 export default function MotionLabPage() {
   const [disabledToggle, setDisabledToggle] = useState(false);
@@ -17,11 +18,36 @@ export default function MotionLabPage() {
   return (
     <>
       <Head>
-        <title>Motion Studio | Philip Omondi</title>
+        <title>Design Engineering Motion Studio | {siteConfig.name}</title>
         <meta
           name="description"
           content="Interactive stateful microinteractions demonstrating choreographed transitions, compositor friendly animations, and accessibility."
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content={siteConfig.name} />
+
+        {/* Open Graph / Social */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${siteConfig.siteUrl}/buttons`} />
+        <meta property="og:title" content={`Design Engineering Motion Studio | ${siteConfig.name}`} />
+        <meta
+          property="og:description"
+          content="Interactive stateful microinteractions demonstrating choreographed transitions, compositor friendly animations, and accessibility."
+        />
+        <meta property="og:image" content={`${siteConfig.siteUrl}/images/profile/7.jpeg`} />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`${siteConfig.siteUrl}/buttons`} />
+        <meta name="twitter:title" content={`Design Engineering Motion Studio | ${siteConfig.name}`} />
+        <meta
+          name="twitter:description"
+          content="Interactive stateful microinteractions demonstrating choreographed transitions, compositor friendly animations, and accessibility."
+        />
+        <meta name="twitter:image" content={`${siteConfig.siteUrl}/images/profile/7.jpeg`} />
+
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.ico" />
       </Head>
 
       <main className="min-h-screen pt-28 pb-20 px-6 max-w-[1200px] mx-auto text-light-text dark:text-dark-text">

@@ -21,6 +21,7 @@ export default function Hero() {
               src="/images/profile/7.jpeg"
               alt="Philip Omondi"
               fill
+              sizes="(max-width: 640px) 260px, (max-width: 768px) 350px, 400px"
               className="object-cover rounded-3xl"
               priority
             />

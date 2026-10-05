@@ -92,7 +92,7 @@ export default function Navbar() {
         <Link
           href="/"
           className="md:absolute md:left-1/2 md:-translate-x-1/2 group"
-          aria-label="Philip Omondi Home"
+          aria-label="PO - Philip Omondi Home"
         >
           <div className="w-11 h-11 rounded-full bg-light-text dark:bg-dark-text
                           flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">

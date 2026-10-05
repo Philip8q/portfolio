@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Icon } from "@iconify/react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { siteConfig } from "@/data/siteConfig";
+
+const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -15,14 +17,24 @@ export default function ContactSection() {
 
   const [status, setStatus] = useState("idle"); // idle | submitting | success | error
   const [errorMessage, setErrorMessage] = useState("");
+  const isSubmittingRef = useRef(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    if (status === "error") {
+      setStatus("idle");
+      setErrorMessage("");
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Synchronous execution lock against rapid double-submission race conditions
+    if (isSubmittingRef.current || status === "submitting") {
+      return;
+    }
 
     // Prevent spam if bot field populated
     if (formData["bot-field"]) {
@@ -35,6 +47,13 @@ export default function ContactSection() {
       return;
     }
 
+    if (!EMAIL_REGEX.test(formData.email.trim())) {
+      setStatus("error");
+      setErrorMessage("Please provide a valid work email address (e.g. name@domain.com).");
+      return;
+    }
+
+    isSubmittingRef.current = true;
     setStatus("submitting");
     setErrorMessage("");
 
@@ -68,6 +87,8 @@ export default function ContactSection() {
       console.error("Form transmission error:", err);
       setStatus("error");
       setErrorMessage("Transmission encountered a network interruption. Please retry or connect via WhatsApp.");
+    } finally {
+      isSubmittingRef.current = false;
     }
   };
 

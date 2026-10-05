@@ -6,7 +6,7 @@ export const projects = [
       "AI lead qualification system for small real estate agencies. Captures inbound interest from web forms and webhooks, runs it through a streaming AI chat that asks the right questions, then scores and routes it into a pipeline. Built as my FlyRank capstone.",
     tech: ["Next.js", "AI SDK", "OpenRouter", "n8n", "Supabase"],
     github: "https://github.com/Philip8q/leadflow",
-    live: "https://leadflow.vercel.app",
+    live: "https://leadflow-ten-sage.vercel.app",
     image: "/images/projects/leadflow.svg",
   },
   {

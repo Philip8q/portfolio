@@ -16,11 +16,11 @@ export default function SkillsGrid() {
         </AnimatedSection>
 
         <AnimatedSection delay={0.1}>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 min-[360px]:grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 sm:gap-4 md:gap-6">
             {skills.map((skill, i) => (
               <div
                 key={skill.name}
-                className="flex flex-col items-center gap-2 p-4 rounded-xl
+                className="flex flex-col items-center justify-center gap-2 p-3 sm:p-4 rounded-xl
                            bg-light-card dark:bg-dark-card
                            border border-light-border dark:border-dark-border
                            hover:border-light-accent/50 dark:hover:border-dark-accent/50
@@ -28,11 +28,11 @@ export default function SkillsGrid() {
               >
                 <Icon
                   icon={skill.icon}
-                  width={32}
-                  height={32}
+                  width={30}
+                  height={30}
                   className="text-light-accent dark:text-dark-accent"
                 />
-                <span className="text-xs font-medium text-light-secondary dark:text-dark-secondary text-center">
+                <span className="text-xs font-medium text-light-secondary dark:text-dark-secondary text-center truncate max-w-full">
                   {skill.name}
                 </span>
               </div>

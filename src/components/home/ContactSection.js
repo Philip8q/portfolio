@@ -96,7 +96,7 @@ export default function ContactSection() {
 
         <div className="max-w-2xl mx-auto">
           <AnimatedSection delay={0.1}>
-            <div className="p-8 sm:p-10 rounded-2xl border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-sm">
+            <div className="p-5 sm:p-8 md:p-10 rounded-2xl border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-sm">
               <AnimatePresence mode="wait">
                 {status === "success" ? (
                   <motion.div
@@ -188,7 +188,7 @@ export default function ContactSection() {
                           value={formData.name}
                           onChange={handleChange}
                           placeholder="Alex Morgan"
-                          className="w-full px-4 py-3 rounded-xl border border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text text-sm focus:outline-none focus:ring-2 focus:ring-zinc-500/40 transition-all placeholder:text-light-secondary/50 dark:placeholder:text-dark-secondary/50"
+                          className="w-full px-4 py-3 rounded-xl border border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-zinc-500/40 transition-all placeholder:text-light-secondary/50 dark:placeholder:text-dark-secondary/50"
                         />
                       </div>
 
@@ -207,7 +207,7 @@ export default function ContactSection() {
                           value={formData.email}
                           onChange={handleChange}
                           placeholder="alex@enterprise.com"
-                          className="w-full px-4 py-3 rounded-xl border border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text text-sm focus:outline-none focus:ring-2 focus:ring-zinc-500/40 transition-all placeholder:text-light-secondary/50 dark:placeholder:text-dark-secondary/50"
+                          className="w-full px-4 py-3 rounded-xl border border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-zinc-500/40 transition-all placeholder:text-light-secondary/50 dark:placeholder:text-dark-secondary/50"
                         />
                       </div>
                     </div>
@@ -225,7 +225,7 @@ export default function ContactSection() {
                         name="subject"
                         value={formData.subject}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 rounded-xl border border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text text-sm focus:outline-none focus:ring-2 focus:ring-zinc-500/40 transition-all"
+                        className="w-full px-4 py-3 rounded-xl border border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-zinc-500/40 transition-all"
                       >
                         <option value="AI & Automation Inquiry">AI &amp; Automation Lead Engine</option>
                         <option value="n8n Workflow Integration">n8n Workflow Architecture</option>
@@ -250,7 +250,7 @@ export default function ContactSection() {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Tell me about your pipeline goals, timeline, or engineering opportunity..."
-                        className="w-full px-4 py-3 rounded-xl border border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text text-sm focus:outline-none focus:ring-2 focus:ring-zinc-500/40 transition-all placeholder:text-light-secondary/50 dark:placeholder:text-dark-secondary/50 resize-y"
+                        className="w-full px-4 py-3 rounded-xl border border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text text-base sm:text-sm focus:outline-none focus:ring-2 focus:ring-zinc-500/40 transition-all placeholder:text-light-secondary/50 dark:placeholder:text-dark-secondary/50 resize-y"
                       />
                     </div>
 
@@ -259,7 +259,7 @@ export default function ContactSection() {
                       <button
                         type="submit"
                         disabled={status === "submitting"}
-                        className="w-full py-4 px-6 rounded-xl font-semibold text-sm transition-all duration-200 shadow-sm flex items-center justify-center gap-2.5 bg-zinc-900 text-white hover:bg-black dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200 disabled:opacity-60 disabled:cursor-not-allowed"
+                        className="w-full py-3.5 px-6 min-h-[48px] rounded-xl font-semibold text-sm transition-all duration-200 shadow-sm flex items-center justify-center gap-2.5 bg-zinc-900 text-white hover:bg-black dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200 disabled:opacity-60 disabled:cursor-not-allowed"
                       >
                         {status === "submitting" ? (
                           <>

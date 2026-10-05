@@ -126,10 +126,12 @@ export default function Navbar() {
         </div>
 
         {/* Mobile menu button and theme toggle */}
-        <div className="md:hidden flex items-center gap-3">
-          <ThemeToggle />
+        <div className="md:hidden flex items-center gap-2">
+          <div className="w-11 h-11 flex items-center justify-center">
+            <ThemeToggle />
+          </div>
           <button
-            className="flex flex-col gap-1.5 p-2 rounded-lg hover:bg-light-border/40 dark:hover:bg-dark-border/40 transition-colors"
+            className="w-11 h-11 flex flex-col items-center justify-center gap-1.5 rounded-lg hover:bg-light-border/40 dark:hover:bg-dark-border/40 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
@@ -162,16 +164,16 @@ export default function Navbar() {
                        bg-light-bg/95 dark:bg-dark-bg/95 backdrop-blur-xl
                        border-b border-light-border dark:border-dark-border shadow-xl"
           >
-            <div className="px-8 py-5 flex flex-col gap-3.5">
+            <div className="px-6 sm:px-8 py-5 flex flex-col gap-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`text-base font-medium transition-colors py-1
+                  className={`text-base font-medium transition-colors py-2 px-2 rounded-lg
                     ${
                       router.pathname === link.href
-                        ? "text-light-accent dark:text-dark-accent font-semibold"
+                        ? "text-light-accent dark:text-dark-accent font-semibold bg-light-accent/10 dark:bg-dark-accent/10"
                         : "text-light-secondary dark:text-dark-secondary hover:text-light-text dark:hover:text-dark-text"
                     }`}
                 >
@@ -179,12 +181,12 @@ export default function Navbar() {
                 </Link>
               ))}
 
-              <div className="flex items-center gap-3 pt-2">
+              <div className="flex items-center gap-3 pt-3">
                 <a
                   href={siteConfig.cvUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center text-xs font-semibold py-2 rounded-lg border border-light-border dark:border-dark-border text-light-text dark:text-dark-text"
+                  className="flex-1 text-center text-xs font-semibold py-2.5 min-h-[44px] flex items-center justify-center rounded-lg border border-light-border dark:border-dark-border text-light-text dark:text-dark-text"
                 >
                   View CV
                 </a>
@@ -192,7 +194,7 @@ export default function Navbar() {
                   href={siteConfig.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center text-xs font-semibold py-2 rounded-lg bg-light-accent text-white dark:bg-dark-accent dark:text-dark-bg"
+                  className="flex-1 text-center text-xs font-semibold py-2.5 min-h-[44px] flex items-center justify-center rounded-lg bg-light-accent text-white dark:bg-dark-accent dark:text-dark-bg"
                 >
                   Book a Call
                 </a>

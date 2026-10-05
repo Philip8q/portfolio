@@ -14,9 +14,9 @@ export default function Hero() {
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="flex-1 flex justify-center md:justify-end relative"
+          className="flex-1 flex justify-center md:justify-end relative w-full"
         >
-          <div className="relative w-[280px] h-[340px] sm:w-[350px] sm:h-[420px] md:w-[400px] md:h-[480px] shadow-2xl rounded-3xl overflow-hidden ring-1 ring-light-border dark:ring-dark-border">
+          <div className="relative w-[260px] sm:w-[350px] sm:h-[420px] md:w-[400px] md:h-[480px] h-[320px] max-w-[calc(100vw-3rem)] shadow-2xl rounded-3xl overflow-hidden ring-1 ring-light-border dark:ring-dark-border">
             <Image
               src="/images/profile/7.jpeg"
               alt="Philip Omondi"
@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center md:justify-start gap-3.5">
             <a
               href="#projects"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 min-h-[44px] rounded-lg
                          bg-light-text dark:bg-dark-text
                          text-white dark:text-dark-bg font-semibold
                          hover:opacity-90 transition-opacity shadow-md w-full sm:w-auto text-sm"
@@ -67,7 +67,7 @@ export default function Hero() {
               href={siteConfig.cvUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[44px] rounded-lg
                          border border-light-border dark:border-dark-border
                          text-light-text dark:text-dark-text font-medium
                          hover:border-light-accent dark:hover:border-dark-accent
@@ -82,7 +82,7 @@ export default function Hero() {
               href={siteConfig.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[44px] rounded-lg
                          bg-light-accent/10 dark:bg-dark-accent/10
                          text-light-accent dark:text-dark-accent font-medium
                          hover:bg-light-accent hover:text-white dark:hover:bg-dark-accent dark:hover:text-dark-bg

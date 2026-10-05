@@ -9,6 +9,7 @@ import { siteConfig } from "@/data/siteConfig";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/#projects" },
+  { name: "3D Studio", href: "/3d" },
   { name: "Contact", href: "/#contact" },
   { name: "About", href: "/about" },
 ];

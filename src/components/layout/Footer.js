@@ -1,4 +1,5 @@
 import SocialIcons from "@/components/ui/SocialIcons";
+import FlyRankBadge from "@/components/ui/FlyRankBadge";
 import { Icon } from "@iconify/react";
 import { siteConfig } from "@/data/siteConfig";
 
@@ -58,6 +59,16 @@ export default function Footer() {
 
         <div className="flex justify-center mb-8">
           <SocialIcons size={22} />
+        </div>
+
+        {/* FlyRank Graduate Verification Badge */}
+        <div className="flex justify-center mb-8">
+          <FlyRankBadge
+            credentialId="FR-2026-PO"
+            firstName="Philip"
+            fullName={siteConfig.name}
+            track="Frontend Engineering & AI Systems"
+          />
         </div>
 
         <p className="text-sm text-light-secondary dark:text-dark-secondary">

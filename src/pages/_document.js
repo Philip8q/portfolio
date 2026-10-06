@@ -10,6 +10,13 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+
+        {/* Cloudflare Web Analytics (Privacy-First, Free, No Cookies Required) */}
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "flyrank-portfolio-philip-omondi"}'
+        />
       </Head>
       <body className="font-inter">
         <script

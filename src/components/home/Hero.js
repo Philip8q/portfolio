@@ -3,12 +3,16 @@ import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
 import CircularText from "@/components/ui/CircularText";
 import LightbulbSvg from "@/components/ui/LightbulbSvg";
+import HeroShaderCanvas from "@/components/ui/HeroShaderCanvas";
 import { siteConfig } from "@/data/siteConfig";
 
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 md:px-8 pt-24 pb-16 overflow-hidden relative">
-      <div className="max-w-[1400px] w-full mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-16">
+      {/* Fullscreen Ambient GLSL Fragment Shader */}
+      <HeroShaderCanvas className="opacity-25 dark:opacity-50 -z-10" />
+
+      <div className="max-w-[1400px] w-full mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-16 relative z-10">
         {/* Left: Profile image */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}

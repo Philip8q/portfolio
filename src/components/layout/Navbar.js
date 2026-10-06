@@ -10,6 +10,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "/#projects" },
   { name: "3D Studio", href: "/3d" },
+  { name: "Shader", href: "/shader" },
   { name: "Contact", href: "/#contact" },
   { name: "About", href: "/about" },
 ];
